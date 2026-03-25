@@ -46,6 +46,13 @@ header {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--color-acento);
+    .card {
+    background: #ffffff;
+    border-radius: 8px; /* Bordes suaves como el link */
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Sombra elegante */
+    border: 1px solid #f0f0f0;
 }
 .sessions {
     font-weight: bold;
