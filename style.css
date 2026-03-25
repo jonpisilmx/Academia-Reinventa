@@ -1,0 +1,84 @@
+﻿/* Estilo Base Estilo Anáhuac / Minimalista */
+:root {
+    --color-fondo: #fcfbf9; /* Beige muy sutil */
+    --color-texto: #2d2d2d;
+    --color-acento: #8b5a2b; /* Tono madera */
+    --blanco: #ffffff;
+}
+body {
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    margin: 0;
+}
+/* Header Limpio */
+header {
+    background: var(--blanco);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Grid de Niveles (Pricing Cards) */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 4rem 5%;
+}
+.card {
+    background: var(--blanco);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Sombra suave como el link */
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-acento);
+}
+.sessions {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+/* Botones con estilo institucional */
+button {
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+/* Sección REPLICA con Iconos */
+.replica-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    padding: 3rem 5%;
+    background: #fdfdfd;
+}
+.step span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-acento);
+    opacity: 0.3;
+}
