@@ -298,3 +298,63 @@ footer {
     h1 { font-size: 2.5rem; }
     .header-flex { flex-direction: column; gap: 15px; }
 }
+
+/* --- ESTILOS MANIFIESTO (MODO OSCURO ELEGANTE) --- */
+.bg-dark {
+    background-color: #1a1a1a; /* Fondo casi negro para contrastar */
+    color: #e0e0e0;
+}
+
+.white { color: #ffffff !important; }
+.gold { color: var(--color-acento) !important; font-style: italic; }
+
+.manifiesto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.manifiesto-item h3 {
+    color: var(--color-acento);
+    font-size: 1.3rem;
+    border-left: 3px solid var(--color-acento);
+    padding-left: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.manifiesto-item p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.manifiesto-item strong {
+    color: #fff;
+}
+
+/* Caja de Cita */
+.quote-box {
+    margin-top: 80px;
+    padding: 40px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-family: serif;
+    font-style: italic;
+    color: var(--color-acento);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .manifiesto-grid {
+        grid-template-columns: 1fr;
+    }
+}
