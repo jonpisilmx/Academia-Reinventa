@@ -11,6 +11,10 @@ body {
     color: var(--color-texto);
     line-height: 1.6;
     margin: 0;
+.container {
+    max-width: 1200px; /* Ancho máximo para que no se estire infinito */
+    margin: 0 auto;    /* Esto centra el bloque mágicamente */
+    padding: 0 5%;     /* Margen interno para que en celulares no toque los bordes */
 }
 /* Header Limpio */
 header {
