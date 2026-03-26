@@ -216,11 +216,27 @@ blockquote {
     margin: 0 auto;
 }
 
-/* --- PRECIOS Y NIVELES --- */
+/* --- PRECIOS Y NIVELES (CENTRADOS) --- */
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    justify-content: center; /* Esto centra la última tarjeta si queda sola */
+    max-width: 1000px; /* Estrecha un poco el contenedor para que luzca mejor */
+    margin: 0 auto;
+}
+
+/* Ajuste para que si hay 4, no se vea una huérfana gigante */
+@media (min-width: 1100px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 320px); /* Las agrupa en 2x2 para mayor simetría */
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr; /* En móvil una tras otra */
+    }
 }
 
 .card {
